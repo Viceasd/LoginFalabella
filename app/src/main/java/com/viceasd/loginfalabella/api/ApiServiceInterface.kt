@@ -42,7 +42,7 @@ interface ApiServiceInterface {
     fun deleteUser(@Path("id") id: Int)
 
     @GET("api")
-    fun getList(): Observable<List<Indicador>>
+    fun getList(): Observable<Indicador>
 
     companion object Factory {
         fun create(): ApiServiceInterface {
